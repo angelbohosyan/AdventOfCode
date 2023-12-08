@@ -40,7 +40,7 @@ fn main() -> Result<(), io::Error> {
                 if is_valid.get_mut(&(row)).unwrap().contains(&(column)) {
                     is_number_valid = true
                 }
-            } else if number != "" {
+            } else {
                 if is_number_valid {
                     println!("{}",number);
                     sum += number.parse::<i32>().unwrap();
