@@ -42,7 +42,6 @@ fn main() -> Result<(), io::Error> {
                 }
             } else {
                 if is_number_valid {
-                    println!("{}",number);
                     sum += number.parse::<i32>().unwrap();
                     is_number_valid = false
                 }
@@ -52,7 +51,6 @@ fn main() -> Result<(), io::Error> {
         }
 
         if number != "" && is_number_valid {
-            println!("{}",number);
             sum += number.parse::<i32>().unwrap();
             is_number_valid = false
         }
